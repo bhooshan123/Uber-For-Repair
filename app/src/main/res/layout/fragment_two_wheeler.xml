@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="16dp">
+
+<TextView
+    android:id="@+id/textViewTwoWheelerDetails"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Two Wheeler Details"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="16dp"/>
+
+<EditText
+    android:id="@+id/editTextBrand"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textViewTwoWheelerDetails"
+    android:layout_marginTop="16dp"
+    android:hint="Enter Brand"/>
+
+    <EditText
+        android:id="@+id/editTextModel"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextBrand"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="3dp"
+        android:hint="Enter Model" />
+
+    <EditText
+    android:id="@+id/editTextColor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/editTextModel"
+    android:layout_marginTop="8dp"
+    android:hint="Enter Color"/>
+
+<Button
+    android:id="@+id/btnSaveTwoWheelerDetails"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/editTextColor"
+    android:layout_marginTop="16dp"
+    android:text="Save Details"/>
+
+</RelativeLayout>

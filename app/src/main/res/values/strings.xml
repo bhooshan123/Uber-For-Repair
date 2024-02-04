@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Uber For Repair</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_notification_channel_id">Mechanic_Service_Notifications</string>
+    <string-array name="vehicle_types">
+        <item>2 Wheeler</item>
+        <item>Car</item>
+    </string-array>
+    <string-array name="repair_options">
+        <item>Emergency</item>
+        <item>Schedule Repair</item>
+    </string-array>
+
+
 </resources>

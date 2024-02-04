@@ -4,25 +4,26 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class VerificationActivity extends AppCompatActivity {
     EditText phoneno;
     Button otp;
     private FragmentManager manager;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_reg);
 
         // Initialize the FragmentManager
         manager = getSupportFragmentManager();
-
         phoneno = findViewById(R.id.editTextPhone);
         otp = findViewById(R.id.btnSend);
 
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 bundle.putString("phoneno", phoneNumber);
 
                 // if (PhoneNumberValidator.isValidPhoneNumber(phoneNumber)) {
-                Toast.makeText(MainActivity.this, "Valid Phone Number", Toast.LENGTH_SHORT).show();
+                Toast.makeText(VerificationActivity.this, "Valid Phone Number", Toast.LENGTH_SHORT).show();
                 OTPFragment OTPFragment = new OTPFragment();
                 OTPFragment.setArguments(bundle);
                 FragmentTransaction transaction = manager.beginTransaction();

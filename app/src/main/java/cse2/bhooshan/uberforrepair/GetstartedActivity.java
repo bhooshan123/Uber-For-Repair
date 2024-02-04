@@ -10,9 +10,6 @@ import android.widget.TextView;
 public class GetstartedActivity extends AppCompatActivity {
     TextView gstv;
     Button gsbutton;
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +17,7 @@ public class GetstartedActivity extends AppCompatActivity {
         gstv=findViewById(R.id.textView3);
         gsbutton=findViewById(R.id.button);
         gsbutton.setOnClickListener(view -> {
-            Intent intent=new Intent(GetstartedActivity.this,MainActivity.class);
+            Intent intent=new Intent(GetstartedActivity.this, RegActivity.class);
             startActivity(intent);
         });
     }

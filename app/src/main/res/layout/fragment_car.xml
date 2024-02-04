@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewCarDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car Details"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextCarBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewCarDetails"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Car Brand"/>
+
+    <EditText
+        android:id="@+id/editTextCarModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextCarBrand"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Car Model"/>
+
+    <EditText
+        android:id="@+id/editTextCarColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextCarModel"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Car Color"/>
+
+    <Button
+        android:id="@+id/btnSaveCarDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextCarColor"
+        android:layout_marginTop="16dp"
+        android:text="Save Details"/>
+
+</RelativeLayout>

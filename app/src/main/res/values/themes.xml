@@ -1,16 +1,27 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
     <style name="Theme.UberForRepair" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/royal_blue</item>
+        <item name="colorPrimaryVariant">@color/steel_blue</item>
         <item name="colorOnPrimary">@color/white</item>
+
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorSecondary">@color/steel_blue</item>
+        <item name="colorSecondaryVariant">@color/royal_blue</item>
         <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Background color. -->
+        <item name="android:colorBackground">@color/light_gray</item>
+        <item name="colorSurface">@color/light_gray</item>
+
+        <!-- Text and component colors. -->
+        <item name="android:textColor">@color/dark_slate_gray</item>
+        <item name="colorOnBackground">@color/dark_slate_gray</item>
+        <item name="colorOnError">@color/white</item>
+
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+        <item name="android:statusBarColor">@color/steel_blue</item>
+
+        <!-- Customize other components like buttons, etc. -->
     </style>
 </resources>
