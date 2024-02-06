@@ -28,6 +28,7 @@
         android:paddingLeft="32dp"
         android:paddingRight="32dp"
         android:text="GET STARTED"
+        style="@style/CustomButtonStyle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

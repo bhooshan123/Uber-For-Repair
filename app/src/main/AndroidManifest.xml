@@ -26,6 +26,13 @@
         android:theme="@style/Theme.UberForRepair"
         tools:targetApi="31">
         <activity
+            android:name=".LoginActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".ScheduleRepairActivity"
             android:exported="false">
             <meta-data
@@ -88,14 +95,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".ReminderService" android:exported="false"/>
 
-        <receiver android:name=".ReminderBroadcastReceiver" android:exported="true">
+        <service
+            android:name=".ReminderService"
+            android:exported="false" />
+
+        <receiver
+            android:name=".ReminderBroadcastReceiver"
+            android:exported="true">
             <intent-filter>
                 <action android:name="cse2.bhooshan.uberforrepai.ACTION_REMIND" />
             </intent-filter>
         </receiver>
-
+        <receiver
+            android:name=".NetworkChangeReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
 
         <service android:name=".LocationUpdateService" />
 
